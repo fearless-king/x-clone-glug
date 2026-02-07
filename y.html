@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link rel="stylesheet" href="./src/output.css">
+
+<title>X Clone</title>
+</head>
+
+<body class="bg-black text-white">
+
+<div class="flex min-h-screen max-w-7xl mx-auto">
+
+<!-- ============ LEFT SIDEBAR ============ -->
+<aside
+  class="hidden md:flex flex-col 
+         w-20 lg:w-64 
+         px-2 lg:px-4 
+         sticky top-0 h-screen"
+>
+
+<!-- Logo -->
+<div class="py-4 flex justify-center lg:justify-start">
+  <svg viewBox="0 0 24 24"
+       class="invert w-9 hover:bg-gray-800 p-2 rounded-full cursor-pointer">
+    <path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191z"/>
+  </svg>
+</div>  
+
+<!-- Menu -->
+<ul class="space-y-3 text-xl font-bold 
+           flex flex-col items-center lg:items-start">
+
+<li class="flex items-center gap-3 hover:bg-gray-800 px-4 py-2 rounded-full">
+  <span class="material-symbols-outlined text-3xl">home</span>
+  <span class="hidden lg:inline">Home</span>
+</li>
+
+<li class="flex items-center gap-3 hover:bg-gray-800 px-4 py-2 rounded-full">
+  <span class="material-symbols-outlined text-3xl">search</span>
+  <span class="hidden lg:inline">Explore</span>
+</li>
+
+<li class="flex items-center gap-3 hover:bg-gray-800 px-4 py-2 rounded-full">
+  <span class="material-symbols-outlined text-3xl">notifications</span>
+  <span class="hidden lg:inline">Notifications</span>
+</li>
+
+<li class="flex items-center gap-3 hover:bg-gray-800 px-4 py-2 rounded-full">
+  <span class="material-symbols-outlined text-3xl">mail</span>
+  <span class="hidden lg:inline">Messages</span>
+</li>
+
+<li class="flex items-center gap-3 hover:bg-gray-800 px-4 py-2 rounded-full">
+  <span class="material-symbols-outlined text-3xl">bookmark</span>
+  <span class="hidden lg:inline">Bookmarks</span>
+</li>
+
+<li class="flex items-center gap-3 hover:bg-gray-800 px-4 py-2 rounded-full">
+  <span class="material-symbols-outlined text-3xl">person</span>
+  <span class="hidden lg:inline">Profile</span>
+</li>
+
+</ul>
+
+<!-- Post Button -->
+<button class="bg-blue-500 hover:bg-blue-600 mt-6 py-3 rounded-full font-bold hidden lg:block">
+  Post
+</button>
+
+</aside>
+
+<!-- ============ FEED ============ -->
+<main class="flex-1 border-x border-gray-700">
+
+<div class="flex border-b border-gray-700">
+  <div class="flex-1 text-center py-3 font-bold hover:bg-gray-800">For you</div>
+  <div class="flex-1 text-center py-3 font-bold hover:bg-gray-800">Following</div>
+</div>
+
+<div class="p-4 border-b border-gray-700">
+  <input
+    class="w-full bg-black text-xl outline-none"
+    placeholder="What's happening?"
+  />
+</div>
+
+<div class="p-4 border-b border-gray-700">
+  <p class="font-bold">Agni-3 is trending 🚀</p>
+</div>
+
+<div class="p-4 border-b border-gray-700">
+  <p class="font-bold">#INDU19vsENGU19</p>
+</div>
+
+</main>
+
+<!-- ============ RIGHT PANEL ============ -->
+<aside class="hidden lg:block w-80 px-4">
+
+<input
+  class="w-full bg-gray-900 rounded-full py-2 px-4 mt-4 outline-none"
+  placeholder="Search"
+/>
+
+<div class="bg-gray-900 rounded-xl p-4 mt-4">
+  <h2 class="font-bold mb-3">What's happening</h2>
+  <p class="mb-2">Agni-3</p>
+  <p class="mb-2">#INDU19vsENGU19</p>
+</div>
+
+</aside>
+
+</div>
+
+</body>
+</html>

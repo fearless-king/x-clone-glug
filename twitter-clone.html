@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>X clone</title>
+    <link
+      rel="shortcut icon"
+      href="https://abs.twimg.com/favicons/twitter-pip.3.ico"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <div class="flex min-h-screen">
+      <div class="first w-15 lg:flex-3 sticky top-0 h-screen">
+        <div class="sidebar flex justify-center">
+          <ul class="flex flex-col text-xl space-y-2 font-bold">
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <div class="py-4 flex justify-center lg:justify-start">
+                <svg class="invert w-6" viewBox="0 0 24 24">
+                  <path
+                    d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191z"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">home</span
+              ><span class="hidden lg:block">Home</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">search</span
+              ><span class="hidden lg:block">Explore</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl"
+                >notifications</span
+              ><span class="hidden lg:block">Notifications</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">person_add</span
+              ><span class="hidden lg:block">Follow</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">mail</span
+              ><span class="hidden lg:block">Chat</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <img
+                class="invert w-8"
+                src="https://img.icons8.com/?size=100&id=USGXKHXKl9X7&format=png&color=000000"
+                alt=""
+              /><span class="hidden lg:block">Grok</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">bookmark</span
+              ><span class="hidden lg:block">Bookmarks</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <img
+                src="https://img.icons8.com/?size=100&id=de4vjQ6J061l&format=png&color=000000"
+                class="invert w-8"
+                alt=""
+              /><span class="hidden lg:block">Premium</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">person</span
+              ><span class="hidden lg:block">Profile</span>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <span class="material-symbols-outlined text-3xl">more_horiz</span
+              ><span class="hidden lg:block">More</span>
+            </li>
+            <li
+              class="lg:hidden flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="16"
+                fill="currentColor"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                />
+              </svg>
+            </li>
+            <li class="hidden lg:block">
+              <button
+                class="bg-white text-black px-1 py-2 text-lg w-full rounded-full hover:bg-gray-600 transition duration-200 cursor-pointer"
+              >
+                Post
+              </button>
+            </li>
+            <li
+              class="flex justify-start items-center gap-3 hover:bg-gray-800 hover:rounded-full hover:cursor-pointer w-fit px-4 py-2"
+            >
+              <div class="img w-10 m-1">
+                <img
+                  src="https://img.icons8.com/?size=100&id=z-JBA_KtSkxG&format=png&color=000000"
+                  alt=""
+                />
+              </div>
+              <div flex flex-col>
+                <div class="hidden lg:block text-[15px]">ABHIRAJ DAS</div>
+                <div class="hidden lg:block text-[15px] font-normal text-gray-500">
+                  @heyy_abhiraj
+                </div>
+              </div>
+              <div class="hidden lg:block">...</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="second flex-5 border border-gray-600 border-y-black">
+        <div class="top flex relative sticky top-0 bg-black">
+          <div
+            class="absolute flex justify-center items-center bg-blue-500 left-[20%] w-15 h-1.5 rounded-full z-10 bottom-0"
+          ></div>
+          <div
+            class="left flex flex-1 py-3 justify-center items-center font-bold hover:bg-gray-800 transition duration-200 cursor-pointer"
+          >
+            For you
+          </div>
+          <div
+            class="right flex flex-1 py-3 justify-center items-center font-bold hover:bg-gray-800 transition duration-200 cursor-pointer"
+          >
+            Following
+          </div>
+        </div>
+        <div class="h-px w-full bg-gray-600"></div>
+        <div class="whatIsHappening flex gap-4">
+          <div class="img w-10 m-3">
+            <img
+              src="https://img.icons8.com/?size=100&id=z-JBA_KtSkxG&format=png&color=000000"
+              alt=""
+            />
+          </div>
+          <div class="w-full mr-8">
+            <input
+              type="text"
+              name=""
+              id="postInput"
+              class="bg-black text-white w-full h-10 my-1 outline-none text-xl"
+              placeholder="What's happening?"
+              maxlength="280"
+            />
+            <div
+              class="text-blue-400 flex items-center gap-2 w-full py-2 font-bold"
+            >
+              <span class="material-symbols-outlined"> globe_asia </span>
+              <span class="text-sm">Everyone can reply</span>
+            </div>
+            <div class="w-full bg-gray-600 h-px mb-2"></div>
+            <div class="flex justify-between">
+              <div class="bicons flex gap-4 py-1">
+                <span
+                  class="material-symbols-outlined cursor-pointer hover:bg-gray-500 hover:rounded-full"
+                >
+                  image
+                </span>
+                <span
+                  class="material-symbols-outlined cursor-pointer hover:bg-gray-500 hover:rounded-full"
+                >
+                  gif
+                </span>
+                <span
+                  class="material-symbols-outlined cursor-pointer hover:bg-gray-500 hover:rounded-full"
+                >
+                  ballot
+                </span>
+                <span
+                  class="material-symbols-outlined cursor-pointer hover:bg-gray-500 hover:rounded-full"
+                >
+                  sentiment_satisfied
+                </span>
+                <span
+                  class="material-symbols-outlined cursor-pointer hover:bg-gray-500 hover:rounded-full"
+                >
+                  calendar_month
+                </span>
+                <span
+                  class="material-symbols-outlined cursor-pointer hover:bg-gray-500 hover:rounded-full"
+                >
+                  pin_drop
+                </span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span id="charCount" class="text-sm text-gray-500"></span>
+                <div class="post-btn px-3 w-30 font-bold">
+                  <button
+                    id="postBtn"
+                    class="bg-white text-black px-1 py-2 text-lg w-full rounded-full hover:bg-gray-600 transition duration-200 cursor-pointer"
+                  >
+                    Post
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-px bg-gray-600 mt-1"></div>
+        <div class="posts" id="postsContainer">
+          <div class="post flex">
+            <div class="image m-4">
+              <img
+                src="https://avatars.githubusercontent.com/u/11613311?v=4"
+                class="w-16 rounded-full"
+                alt=""
+              />
+            </div>
+            <div class="content my-3 w-full">
+              <div class="flex items-center">
+                <span
+                  class="font-bold hover:underline hover:cursor-pointer text-white"
+                  >Hitesh Choudhary
+                </span>
+                <img
+                  class="rounded-full w-10"
+                  src="https://media.tenor.com/WlnBGzhdFfwAAAAe/twitter-verified-icon.png"
+                  alt=""
+                />
+                <span class="text-gray-500"> @Hiteshdotcom · 44m</span>
+              </div>
+              <div class="mb-4">Blink n things are outdated 😂</div>
+              <div class="postimg mr-4">
+                <img
+                  src="https://pbs.twimg.com/media/HAf6zZAaUAA3R0Q?format=jpg&name=medium"
+                  class="border border-gray-500 rounded-2xl"
+                />
+              </div>
+              <div
+                class="icon flex justify-around items-center mr-4 mt-2 hover:cursor-pointer"
+              >
+                <div class="flex items-center hover:text-blue-400">
+                  <span class="material-symbols-outlined flex"> chat_bubble </span
+                  ><span class="count-text">1k</span>
+                </div>
+                <div class="flex items-center hover:text-green-400 retweet-btn">
+                  <span class="material-symbols-outlined"> repeat </span
+                  ><span class="count-text">0.5k</span>
+                </div>
+                <div class="flex items-center hover:text-red-400 like-btn">
+                  <span class="material-symbols-outlined"> favorite </span
+                  ><span class="count-text">1M</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined"> bar_chart </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-px bg-gray-600 mt-1"></div>
+          <div class="post flex">
+            <div class="image m-4">
+              <img
+                src="https://avatars.githubusercontent.com/u/11613311?v=4"
+                class="w-16 rounded-full"
+                alt=""
+              />
+            </div>
+            <div class="content my-3 w-full">
+              <div class="flex items-center">
+                <span
+                  class="font-bold hover:underline hover:cursor-pointer text-white"
+                  >Hitesh Choudhary
+                </span>
+                <img
+                  class="rounded-full w-10"
+                  src="https://media.tenor.com/WlnBGzhdFfwAAAAe/twitter-verified-icon.png"
+                  alt=""
+                />
+                <span class="text-gray-500"> @Hiteshdotcom · 44m</span>
+              </div>
+              <div class="mb-4">Blink n things are outdated 😂</div>
+              <div class="postimg mr-4">
+                <img
+                  src="https://pbs.twimg.com/media/HAf6zZAaUAA3R0Q?format=jpg&name=medium"
+                  class="border border-gray-500 rounded-2xl"
+                />
+              </div>
+              <div
+                class="icon flex justify-around items-center mr-4 mt-2 hover:cursor-pointer"
+              >
+                <div class="flex items-center hover:text-blue-400">
+                  <span class="material-symbols-outlined flex"> chat_bubble </span
+                  ><span class="count-text">1k</span>
+                </div>
+                <div class="flex items-center hover:text-green-400 retweet-btn">
+                  <span class="material-symbols-outlined"> repeat </span
+                  ><span class="count-text">0.5k</span>
+                </div>
+                <div class="flex items-center hover:text-red-400 like-btn">
+                  <span class="material-symbols-outlined"> favorite </span
+                  ><span class="count-text">1M</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined"> bar_chart </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-px bg-gray-600 mt-1"></div>
+        </div>
+      </div>
+      <div class="hidden md:block third flex-4">
+        <div class="search sticky top-0 bg-black py-2">
+          <input
+            class="bg-black rounded-full w-3/4 py-1.5 px-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-600 mx-10 my-1"
+            type="text"
+            name=""
+            id=""
+            placeholder="Search"
+          />
+        </div>
+        <div class="subscription"></div>
+        <div
+          class="whatsHappening bg-black rounded-2xl w-3/4 py-1.5 px-3 text-white border border-gray-600 mx-10 my-1"
+        >
+          <h1 class="text-lg font-bold">What's happpening</h1>
+          <div class="item my-3 cursor-pointer">
+            <div class="text-sm text-gray-500">Trending in India</div>
+            <div class="font-bold text-[15px]">Agni-3</div>
+          </div>
+          <div class="item my-3 cursor-pointer">
+            <div class="text-sm text-gray-500">Sports • Trending</div>
+            <div class="font-bold text-[15px]">#INDU19vsENGU19</div>
+          </div>
+          <div class="item my-3 cursor-pointer">
+            <div class="text-sm text-gray-500">Sports • Trending</div>
+            <div class="font-bold text-[15px]">#vaibhavsuryavanshi</div>
+          </div>
+          <div class="link text-blue-400 py-1 hover:cursor-pointer">
+            <div class="text-[16px]">Show more</div>
+          </div>
+        </div>
+        <div
+          class="whoToFollow bg-black rounded-2xl w-3/4 py-1.5 px-3 text-white border border-gray-600 mx-10 my-1"
+        >
+          <h1 class="text-lg font-bold">Who to follow</h1>
+          <div
+            class="item my-3 cursor-pointer flex items-center justify-between gap-3"
+          >
+            <div class="flex">
+              <div class="p1 mr-1">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </div>
+              <div class="p2">
+                <div class="font-bold hover:underline">Narendra Modi</div>
+                <div class="text-gray-500">@narendramodi</div>
+              </div>
+            </div>
+            <div class="p3">
+              <button
+                class="bg-white text-black rounded-full p-1.5 px-3 font-bold"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+          <div
+            class="item my-3 cursor-pointer flex items-center justify-between gap-3"
+          >
+            <div class="flex">
+              <div class="p1 mr-1">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="https://pbs.twimg.com/profile_images/1744218382612971520/zmlYm9Rf_400x400.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="p2">
+                <div class="font-bold hover:underline">Rahul Gandhi</div>
+                <div class="text-gray-500">@RahulGandhi</div>
+              </div>
+            </div>
+            <div class="p3">
+              <button
+                class="bg-white text-black rounded-full p-1.5 px-3 font-bold"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+          <div
+            class="item my-3 cursor-pointer flex items-center justify-between gap-3"
+          >
+            <div class="flex">
+              <div class="p1 mr-1">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="https://pbs.twimg.com/profile_images/736392853992001537/eF4LJLkn_400x400.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="p2">
+                <div class="font-bold hover:underline">Donald J. Trump</div>
+                <div class="text-gray-500">@realDonaldTrump</div>
+              </div>
+            </div>
+            <div class="p3">
+              <button
+                class="bg-white text-black rounded-full p-1.5 px-3 font-bold"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+          <div class="link text-blue-400 py-1 hover:cursor-pointer">
+            <div class="text-[16px]">Show more</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const postInput = document.getElementById("postInput");
+      const charCount = document.getElementById("charCount");
+      const postBtn = document.getElementById("postBtn");
+      const postsContainer = document.getElementById("postsContainer");
+
+      postInput.addEventListener("input", function () {
+        const currentLength = this.value.length;
+        const maxLength = 280;
+        const remaining = maxLength - currentLength;
+
+        if (currentLength > 0) {
+          charCount.textContent = remaining;
+          if (remaining < 20) {
+            charCount.classList.add("text-red-500");
+            charCount.classList.remove("text-gray-500");
+          } else {
+            charCount.classList.add("text-gray-500");
+            charCount.classList.remove("text-red-500");
+          }
+        } else {
+          charCount.textContent = "";
+        }
+      });
+
+      postBtn.addEventListener("click", function () {
+        const postText = postInput.value.trim();
+        if (postText) {
+          createPost(postText, false, null);
+          postInput.value = "";
+          charCount.textContent = "";
+        }
+      });
+
+      function createPost(text, isRetweet, originalPost) {
+        const postHTML = `
+          <div class="post flex">
+            <div class="image m-4">
+              <img
+                src="https://img.icons8.com/?size=100&id=z-JBA_KtSkxG&format=png&color=000000"
+                class="w-16 rounded-full"
+                alt=""
+              />
+            </div>
+            <div class="content my-3 w-full">
+              ${
+                isRetweet
+                  ? `
+              <div class="flex items-center gap-2 text-gray-500 text-sm mb-1">
+                <span class="material-symbols-outlined text-lg ml-4">repeat</span>
+                <span>ABHIRAJ DAS Reposted</span>
+              </div>
+              `
+                  : ""
+              }
+              ${
+                isRetweet && originalPost
+                  ? `
+              <div class="flex items-center">
+                <span class="font-bold hover:underline hover:cursor-pointer text-white">${
+                  originalPost.name
+                }</span>
+                ${
+                  originalPost.verified
+                    ? `<img class="rounded-full w-10" src="https://media.tenor.com/WlnBGzhdFfwAAAAe/twitter-verified-icon.png" alt=""/>`
+                    : ""
+                }
+                <span class="text-gray-500"> ${originalPost.handle} · ${
+                  originalPost.time
+                }</span>
+              </div>
+              <div class="mb-4">${text}</div>
+              ${
+                originalPost.image
+                  ? `<div class="postimg mr-4"><img src="${originalPost.image}" class="border border-gray-500 rounded-2xl"/></div>`
+                  : ""
+              }
+              `
+                  : `
+              <div class="flex items-center">
+                <span class="font-bold hover:underline hover:cursor-pointer text-white">ABHIRAJ DAS</span>
+                <span class="text-gray-500"> @heyy_abhiraj · now</span>
+              </div>
+              <div class="mb-4">${text}</div>
+              `
+              }
+              <div class="icon flex justify-around items-center mr-4 mt-2 hover:cursor-pointer">
+                <div class="flex items-center hover:text-blue-400">
+                  <span class="material-symbols-outlined flex">chat_bubble</span>
+                </div>
+                <div class="flex items-center hover:text-green-400 retweet-btn">
+                  <span class="material-symbols-outlined">repeat</span>
+                </div>
+                <div class="flex items-center hover:text-red-400 like-btn">
+                  <span class="material-symbols-outlined">favorite</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined">bar_chart</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-px bg-gray-600 mt-1"></div>
+        `;
+
+        postsContainer.insertAdjacentHTML("afterbegin", postHTML);
+      }
+
+      function parseCount(text) {
+        if (!text || text.trim() === "") return 0;
+        
+        text = text.trim();
+        if (text.includes("M")) {
+          return parseFloat(text) * 1000000;
+        } else if (text.includes("k")) {
+          return parseFloat(text) * 1000;
+        } else {
+          return parseInt(text) || 0;
+        }
+      }
+
+      function formatCount(num) {
+        if (num >= 1000000) {
+          return (num / 1000000).toFixed(1) + "M";
+        } else if (num >= 1000) {
+          return (num / 1000).toFixed(1) + "k";
+        } else {
+          return num.toString();
+        }
+      }
+
+      postsContainer.addEventListener("click", function (e) {
+        const retweetBtn = e.target.closest(".retweet-btn");
+        const likeBtn = e.target.closest(".like-btn");
+
+        if (likeBtn) {
+          const icon = likeBtn.querySelector(".material-symbols-outlined");
+          const countElement = likeBtn.querySelector(".count-text");
+
+          if (countElement) {
+            let currentCount = parseCount(countElement.textContent);
+            
+            if (likeBtn.classList.contains("text-red-400")) {
+              likeBtn.classList.remove("text-red-400");
+              icon.style.fontVariationSettings = "'FILL' 0";
+              currentCount = Math.max(0, currentCount - 1);
+            } else {
+              likeBtn.classList.add("text-red-400");
+              icon.style.fontVariationSettings = "'FILL' 1";
+              currentCount++;
+            }
+            
+            countElement.textContent = formatCount(currentCount);
+          } else {
+            if (likeBtn.classList.contains("text-red-400")) {
+              likeBtn.classList.remove("text-red-400");
+              icon.style.fontVariationSettings = "'FILL' 0";
+            } else {
+              likeBtn.classList.add("text-red-400");
+              icon.style.fontVariationSettings = "'FILL' 1";
+            }
+          }
+        }
+
+        if (retweetBtn) {
+          const post = retweetBtn.closest(".post");
+          const content = post.querySelector(".content");
+
+          const nameElement = content.querySelector(".font-bold.hover\\:underline");
+          const handleElement = content.querySelector(".text-gray-500");
+          const textElement = content.querySelector(".mb-4");
+          const imageElement = content.querySelector(".postimg img");
+
+          if (nameElement && textElement) {
+            const originalPost = {
+              name: nameElement.textContent.trim(),
+              handle: handleElement ? handleElement.textContent.split("·")[0].trim() : "@user",
+              time: handleElement ? handleElement.textContent.split("·")[1]?.trim() || "now" : "now",
+              verified: !!content.querySelector('img[alt=""]'),
+              image: imageElement ? imageElement.src : null,
+            };
+
+            const countElement = retweetBtn.querySelector(".count-text");
+            
+            if (countElement) {
+              let currentCount = parseCount(countElement.textContent);
+              currentCount++;
+              countElement.textContent = formatCount(currentCount);
+            }
+
+            retweetBtn.classList.add("text-green-400");
+
+            createPost(textElement.textContent.trim(), true, originalPost);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
